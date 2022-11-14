@@ -1,0 +1,29 @@
+p {
+    color: blueviolet;
+    text-transform: capitalize;
+    background-image: url(pictures/Guts.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    font-size: 100px;
+}
+h1{
+    color: black;
+    width: auto;
+    text-transform: uppercase;
+}
+h2{
+    color: black;
+    width: auto;
+    text-transform: uppercase;
+}
+h3{
+    color: black;
+    width: auto;
+    text-transform: uppercase;
+}
+h4{
+    color: black;
+    width: auto;
+    text-transform: uppercase;
+}
