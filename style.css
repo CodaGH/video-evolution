@@ -1,29 +1,36 @@
+@font-face{
+    font-family: 'Comfortaa-Regular';
+    src: url(./fonts/Comfortaa-Regular.ttf);
+}
+@font-face{
+    font-family: 'Heavitas';
+    src: url(./fonts/Heavitas.ttf);
+}
+@font-face{
+    font-family: 'Comfortaa-Bold';
+    src: url(./fonts/Comfortaa-Bold.ttf);
+}
+body{
+    font-size: 100%;
+}
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-family: 'Heavitas';
+}
 p {
-    color: blueviolet;
-    text-transform: capitalize;
-    background-image: url(pictures/Guts.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    font-size: 100px;
+    font-family: 'Comfortaa-Regular';
 }
-h1{
-    color: black;
-    width: auto;
-    text-transform: uppercase;
+a:link{
+    text-decoration: underline;
 }
-h2{
-    color: black;
-    width: auto;
-    text-transform: uppercase;
+a:hover{
+    text-decoration: none;
+    background: rgba(160, 51, 151, 0.5);
 }
-h3{
-    color: black;
-    width: auto;
-    text-transform: uppercase;
-}
-h4{
-    color: black;
-    width: auto;
-    text-transform: uppercase;
+div{
+    box-sizing: border-box;
 }
