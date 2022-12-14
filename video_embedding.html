@@ -32,11 +32,11 @@
           ></a>
         </li>
       </div>
-      <div class="sidebar child">
-        <li>Einleitung</li>
-        <li>Beispiel 1</li>
+      <div class="sidebar">
+        <li><a href="#A">Anfang</a></li>
+        <li><a href="#Codebox">Beispiel 1</a></li>
         <li>Ursprung</li>
-        <li>Test</li>
+        <li>HTML5</li>
         <li>Test</li>
         <li>Gebrauch</li>
         <li>Test</li>
@@ -51,17 +51,9 @@
         <li>Test</li>
         <li>Test</li>
         <li>Test</li>
-        <li>Test</li>
-        <li>Test</li>
-        <li>Test</li>
-        <li>Test</li>
-        <li>Test</li>
-        <li>Test</li>
-        <li>Test</li>
-        <li>Test</li>
       </div>
       <div class="main child">
-        <h1>Video Einbettung</h1>
+        <h1 id="A">Video Einbettung</h1>
         <h2>Einleitung</h2>
         <p>
           Video Einbettung in Html5 ist nicht sonderlich kompliziert. Man
@@ -94,9 +86,38 @@
           mussten per &lta> Element verlinkt werden. <br />
           Das Video wurde somit in einem seperaten Tab oder Anwendung geöffnet
           und konnte dort erst abgespielt werden. <br />
+          <img class="icon" src="images/windows_media_player.png" alt="" />
           <br />
           Eine Beispielanwendung wäre zum Beispiel der "Windows Media Player".
+          <br />
+          Das Logo ist rechts aufzufinden --->
+          <br />
+          <br />
+          <br />
+          <hr>
         </p>
+        <h2>Erste Ansätze von Einbettung</h2>
+        <p>
+          Einige Zeit später gab es die Möglichkeit Video Einbettungen und Objekte hinzuzufügen. Dies ging jedoch nur durch Third-Party-Plugins (Drittanbieter Plugins) wie dem Flash-Player oder Quicktime.
+          <br> Das war jedoch nicht sehr effektiv, da der Nutzer das entsprechende Plugin installiert haben musste und das Video in nur in einer schlechten Qualität angezeigt werden konnte.
+          <hr>
+        </p>
+        <h2>HTML5</h2>
+        <p>
+          Als HTML5 veröffentlicht wurde, gab es erstmalig die Möglichkeit Videos ohne weiteres abzuspielen. Dies ermöglichte den Nutzern, durch einfaches benutzen des Video Elements, eine hohe Videoqualität.
+        </p>
+        <pre id="Codebox">
+          <code>
+            &lthtml>
+              &lthead>
+                &lttitle>Test-Website&lt/title>
+              &lt/head>
+              &ltbody>
+                &ltvideo src="videos/example.mp4" controls>&lt/video>
+              &lt/body>
+            &lt/html>
+          </code>
+        </pre>
       </div>
     </div>
   </body>
