@@ -6,18 +6,17 @@
     <meta name="keywords" content="Videos, MP4, Media" />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="images/Icon.png" />
-    <link rel="src" href="scr.js" />
     <title>Video Einbettung</title>
   </head>
   <body>
     <div class="main-container">
       <div class="header button-group">
         <li>
-          <a href="main.html"><button class="button-header">Main</button></a>
+          <a href=""><button class="button-header">Hauptseite</button></a>
         </li>
         <li>
-          <a href="https://www.youtube.com/watch?v=QirmqyMKwIU"
-            ><button class="button-header">Evolution</button></a
+          <a href="Entwicklung.html"
+            ><button class="button-header">Entwicklung</button></a
           >
         </li>
         <li>
@@ -25,20 +24,29 @@
             ><button class="button-header">Video Einbettung</button></a
           >
         </li>
-        <li>
-          <a href="help.html"
+        <li class="help">
+          <a href=""
             ><button class="button-header">
               <img class="help" src="images/Question_Mark.png" alt="" /></button
           ></a>
-        </li>
       </div>
       <div class="sidebar">
-        <li><a href="#A">Anfang</a></li>
+        <li><a href="#Beginning">Anfang</a></li>
         <li><a href="#Codebox">Beispiel 1</a></li>
-        <li>Ursprung</li>
-        <li>HTML5</li>
+        <li><a href="#Ur">Ursprung</a></li>
+        <li><a href="#An">Ansätze</a></li>
+        <li><a href="#ht5">HTML5</a></li>
+        <li><a href="#ex2">Beispiel 2</a></li>
+        <li><a href="#css">CSS Style</a></li>
         <li>Test</li>
-        <li>Gebrauch</li>
+        <li>Test</li>
+        <li>Test</li>
+        <li>Test</li>
+        <li>Test</li>
+        <li>Test</li>
+        <li>Test</li>
+        <li>Test</li>
+        <li>Test</li>
         <li>Test</li>
         <li>Test</li>
         <li>Test</li>
@@ -53,7 +61,7 @@
         <li>Test</li>
       </div>
       <div class="main child">
-        <h1 id="A">Video Einbettung</h1>
+        <h1 id="Beginning">Video Einbettung</h1>
         <h2>Einleitung</h2>
         <p>
           Video Einbettung in Html5 ist nicht sonderlich kompliziert. Man
@@ -80,29 +88,30 @@
           über die Jahre drastisch verändert.
         </p>
         <hr />
-        <h2>Ursprung</h2>
-        <p>
-          Damals konnten Videos nicht direkt über Html angezeigt werden und
-          mussten per &lta> Element verlinkt werden. <br />
-          Das Video wurde somit in einem seperaten Tab oder Anwendung geöffnet
-          und konnte dort erst abgespielt werden. <br />
-          <img class="icon" src="images/windows_media_player.png" alt="" />
-          <br />
-          Eine Beispielanwendung wäre zum Beispiel der "Windows Media Player".
-          <br />
-          Das Logo ist rechts aufzufinden --->
-          <br />
-          <br />
-          <br />
-          <hr>
-        </p>
-        <h2>Erste Ansätze von Einbettung</h2>
+        <div id="important">
+          <h2 id="Ur">Ursprung</h2>
+          <p>
+            Damals konnten Videos nicht direkt über Html angezeigt werden und
+            mussten per &lta> Element verlinkt werden. <br />
+            Das Video wurde somit in einem seperaten Tab oder Anwendung geöffnet
+            und konnte dort erst abgespielt werden. <br />
+            <img class="icon" src="images/windows_media_player.png" alt="" />
+            <br />
+            Eine Beispielanwendung wäre zum Beispiel der "Windows Media Player".
+            <br />
+            <br />
+            <br />
+            <br />
+          </p>
+        </div>
+        <hr>
+        <h2 id="An">Erste Ansätze von Einbettung</h2>
         <p>
           Einige Zeit später gab es die Möglichkeit Video Einbettungen und Objekte hinzuzufügen. Dies ging jedoch nur durch Third-Party-Plugins (Drittanbieter Plugins) wie dem Flash-Player oder Quicktime.
           <br> Das war jedoch nicht sehr effektiv, da der Nutzer das entsprechende Plugin installiert haben musste und das Video in nur in einer schlechten Qualität angezeigt werden konnte.
           <hr>
         </p>
-        <h2>HTML5</h2>
+        <h2 id="ht5">HTML5</h2>
         <p>
           Als HTML5 veröffentlicht wurde, gab es erstmalig die Möglichkeit Videos ohne weiteres abzuspielen. Dies ermöglichte den Nutzern, durch einfaches benutzen des Video Elements, eine hohe Videoqualität.
         </p>
@@ -113,11 +122,54 @@
                 &lttitle>Test-Website&lt/title>
               &lt/head>
               &ltbody>
-                &ltvideo src="videos/example.mp4" controls>&lt/video>
+                &ltvideo src="<mark>/spongebob_dancing.mp4" controls width="300px</mark>"
+                  style="<mark>float:right; margin-right: 200px; margin-bottom: 20px; border: 3px solid
+                    rgb(96, 97, 99); border-radius: 20% / 25%;</mark>">
+                &lt/video>
               &lt/body>
             &lt/html>
           </code>
         </pre>
+        <div>
+          <video src="images/spongebob_dancing-1.mp4" controls width="300px"
+           style="float:right; margin-right: 200px; margin-bottom: 20px; border: 3px solid rgb(96, 97, 99); border-radius: 20% / 25%;">
+          </video>
+          <h2 id="ex2">Beispiel 2:</h2>
+          <p>
+            Rechts ist ein Beispiel zu sehen, welches einige Properties des Video-Elements benutzt um das Video zu verzieren und die Größe zu ändern. <br>
+            <br>
+            Das style-Element ist in diesem Fall sehr wichtig, da es die Ausrichtung und Position im div-Container bestimmt.
+            Die style Attribute werden anschließend einzeln erklärt.
+          </p>
+        </div>
+        <div>
+          <br><br><hr>
+          <div>
+            <h2 class="css"><img class="h-icon" src="images/CSS3_logo_and_wordmark.svg.png" alt="">  CSS Style </h2>
+          </div>
+          <p>
+            Das Style-Element ist ein integriertes Element zum benutzen von der MarkDown-Sprache CSS. <br>
+            CSS steht für Cascading Style Sheets und ermöglicht den Aufbau einer ansehnlich gestalteten Website, da nur HTML nicht dafür reichen würde.
+            <br>
+            CSS-Attribute bestimmen das Aussehen und den Aufbau eines Elements, sei es ein Container oder nur ein p element.
+            <br>
+            Die Attribute die gleich erklärt werden, beziehen sich größtenteils auf das Video-Element.
+            <br>
+            <br>
+            <mark>float: left | right;</mark> | Richtet Element auf der X-Achse links oder recht aus
+            <br>
+            <mark>margin-direction: px;</mark> | Umgibt das Element mit einem Bereich, welcher das Element wegschiebt
+            <br>
+            <mark>border: px style colour; </mark> | Element erhält einen Rand, welcher mit Farben und Stilen bearbeitet wird
+            <br>
+            <mark>border-radius: px or %</mark> | Rand wird abgerundet
+            <br>
+            <mark>background-color: rgba</mark> | Hintergrund Farbe
+            <br>
+            <mark>padding: px</mark> | Umgibt das Element mit einem Bereich, welcher außerhalb des Rands und Margin liegt und verfärbt wird
+            <hr>
+          </p>
+        </div>
       </div>
     </div>
   </body>
